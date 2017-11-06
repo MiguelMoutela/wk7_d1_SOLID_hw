@@ -24,16 +24,16 @@ public class ArtistTest {
 
     @Test
     public void canDrawSquare(){
-        assertEquals("I'm drawing a square!", artist.drawShape(square));
+        assertEquals("I'm drawing a Square!", artist.drawShape(square));
     }
 
     @Test
     public void canDrawCircle(){
-        assertEquals("I'm drawing a circle!", artist.drawShape(circle));
+        assertEquals("I'm drawing a Circle!", artist.drawShape(circle));
     }
 
     @Test
     public void canDrawTriangle(){
-        assertEquals("I'm drawing a triangle!", artist.drawShape(triangle));
+        assertEquals("I'm drawing a Triangle!", artist.drawShape(triangle));
     }
 }
