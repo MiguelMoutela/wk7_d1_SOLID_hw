@@ -14,7 +14,7 @@ public class CircusBear extends Bear{
         super.eat(food);
     }
 
-    public void eat(TopHat food){
+    public void eat(Salmon food){
         super.eat(food);
     }
 
