@@ -17,34 +17,12 @@ public class Bear implements Bearable{
 
     private ArrayList<Edible> belly = new ArrayList<Edible>();
 
-    // pointless implementation
-    public Seal iceFish(){
-        return null;
-    }
-
-    // pointless implementation
-    public String climbIceberg(){
-        return null;
-    }
-
     public int foodCount(){
         return belly.size();
     }
 
     public boolean isBellyFull(){
         return (foodCount() >= 5);
-    }
-
-    public Salmon riverFish(){
-        return new Salmon();
-    }
-
-    public Honey harvestHoney(){
-        return new Honey();
-    }
-
-    public Bamboo harvestBamboo(){
-        return new Bamboo();
     }
 
     public String sleep(){
@@ -54,15 +32,9 @@ public class Bear implements Bearable{
     public String climbRock(){
         return "I'm on a rock, not much to do up here, nice spot for a sleep maybe.";
     }
-
-    public String climbTree(){
-        return "I can climb this tree, you can't hide from me!";
-    }
-
     public void eat(Edible food){
         if (!isBellyFull()){
             belly.add(food);
         }
     }
-
 }
